@@ -1,0 +1,47 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class TwoDArray {
+        public static void main(String args[])
+        {
+                Scanner scr = new Scanner(System.in);
+                int arr[][] = new int[3][3];            //2-D array Declare
+
+                //Loop for taking input in array
+                for(int row=0;row<arr.length;row++)     //Loop for Rows
+                {
+                        for(int col=0;col<arr[0].length;col++)  //Loop for Columns
+                        {       
+                                System.out.print("Enter the element for "+row+","+col+" : ");
+                                arr[row][col] = scr.nextInt();
+                        }
+                }
+
+                //Loop for printing element of array
+                for(int row=0;row<arr.length;row++)
+                {
+                        for(int col=0;col<arr[0].length;col++)
+                        {
+                                System.out.print(arr[row][col]+" ");
+                        }
+                        System.out.println();
+                }
+        }
+}
+
+/* RUN : 
+
+Enter the element for 0,0 : 1
+Enter the element for 0,1 : 2
+Enter the element for 0,2 : 3
+Enter the element for 1,0 : 4
+Enter the element for 1,1 : 5
+Enter the element for 1,2 : 6
+Enter the element for 2,0 : 7
+Enter the element for 2,1 : 8
+Enter the element for 2,2 : 9
+1 2 3
+4 5 6
+7 8 9
+
+ */
