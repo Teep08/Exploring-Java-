@@ -10,6 +10,6 @@ public class StringBuild {
 
         //reverse the string
         str.reverse();
-        System.out.println(str);    //orignal string is - HelloGuys and after revser output is syuGolleH
+        System.out.println(str);    //orignal string is - HelloGuys and after reverse output is syuGolleH
     }  
 }
