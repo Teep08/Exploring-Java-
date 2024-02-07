@@ -16,7 +16,7 @@ public class Guessnumber {
         guess(ran); //calling the Guess method
     }
 
-    public static void guess(int rand[])
+    public static void guess(int ran[])
     {
         Scanner scr = new Scanner(System.in);
         int a=0; 
@@ -24,7 +24,7 @@ public class Guessnumber {
         {
             System.out.print("Guess your "+i+" number :");
             int guss = scr.nextInt();
-            for( int j :rand)
+            for( int j :ran)
             {
                 if(guss == j)  //checking user number is matched with array numbers
                 {
@@ -41,7 +41,7 @@ public class Guessnumber {
             System.out.println("Sorry better luck next time :(");
         }
         System.out.print("The Random numbers are: "); //print the numbers of array
-        for( int j :rand)
+        for( int j :ran)
             {
                 System.out.print(j+" ");
             }
