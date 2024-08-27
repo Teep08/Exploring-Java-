@@ -15,20 +15,25 @@ public class Hashset {
         //print hashset keys
         System.out.println(hs);
 
-        //checking key:9 is exists in our hashset
-        if(hs.contains(9))
+        //Iteration on hash set
+        Iterator it = hs.iterator();
+        while(it.hasNext())
         {
-            System.out.println("Contains");
+            System.out.print(it.next()+",");
         }
-        else
+        System.out.println();
+
+        //for each loop
+        for(Integer in : hs)
         {
-            System.out.println("Not Contains");
+            System.out.print(in+",");
         }
     }
 }
 
 /*
-OUTPUT :
+OUTPUT : 
 [0, null, 2, 7, 8]
-Not Contains
+0,null,2,7,8,
+0,null,2,7,8,
  */
