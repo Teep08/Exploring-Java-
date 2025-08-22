@@ -54,7 +54,7 @@ public class Guessnumber {
 }
 
 /* OUTPUT : 
-GGuess your 1 number :2
+Guess your 1 number :2
 Guess your 2 number :7
 Guess your 3 number :4
 Sorry better luck next time :(
