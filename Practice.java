@@ -1,22 +1,16 @@
-import java.util.Scanner;
-public class Practice
+import java.util.ArrayList;
+
+class Practice
 {
     public static void main(String args[])
     {
-        Scanner scr = new Scanner(System.in);
-        System.out.print("Enter the number: ");
-        int num = scr.nextInt();
+       ArrayList<Integer> arrl = new ArrayList<>();
+       arrl.add(1);
+       arrl.add(4);
 
-        if(num >0 && num != 0)
-        {
-            System.out.println("It's a positive number");
-        }
-        else if(num == 0)
-        {
-            System.out.println("It's a nutral number");
-        }
-        else {
-            System.out.println("It's a negative number");
-        }
+      Object onj =  arrl.clone();
+      System.out.println(arrl);
+       System.out.println(onj);
     }
+
 }
