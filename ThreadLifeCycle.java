@@ -26,3 +26,11 @@ public class ThreadLifeCycle
         //Thread stage is Terminated
     }
 }
+
+/*
+output :
+Thread stage is New, Object created
+Thread stage is Runnable, run() method call
+Thread Stage Running, run() method executing
+Thread Stage Non Runnable, sleep() method executing
+ */
